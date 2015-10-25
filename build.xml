@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <project name="Conpago.System.Contract" default="build" basedir=".">
-	<description>Public contract for Conpago System inteactions.</description>
+	<description>Public contract for Conpago System interactions.</description>
 
 	<property name="src" location="src"/>
 	<property name="lib" location="lib"/>

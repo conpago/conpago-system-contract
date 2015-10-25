@@ -1,6 +1,6 @@
 {
 	"name": "conpago/conpago-system-contract",
-	"description": "Public contract for Conpago System inteactions.",
+	"description": "Public contract for Conpago System interactions.",
 	"version": "0.0.1-alpha",
 	"type": "library",
 	"license": "MIT",

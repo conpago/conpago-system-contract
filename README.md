@@ -1,2 +1,2 @@
 # conpago-system-contract
-Public contract for Conpago System inteactions.
+Public contract for Conpago System interactions.

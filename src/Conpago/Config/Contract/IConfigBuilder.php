@@ -9,9 +9,16 @@
 	namespace Conpago\Config\Contract;
 
 
+	/**
+	 * Interface represents configuration class factory.
+	 *
+	 * @package Conpago\Config\Contract
+	 */
 	interface IConfigBuilder {
 		/**
-		 * @return array
+		 * builds configuration associative array.
+		 *
+		 * @return array This function returns associative configuration array
 		 */
 		function build();
 	}

@@ -9,6 +9,10 @@
 	namespace Conpago\File\Contract;
 
 
+	/**
+	 * Interface IFileSystem
+	 * @package Conpago\File\Contract
+	 */
 	interface IFileSystem
 	{
 		function includeFile($filePath);

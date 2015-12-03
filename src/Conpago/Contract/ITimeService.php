@@ -10,10 +10,15 @@
 
 	use DateTime;
 
+	/**
+	 * Interface represents access to system time.
+	 *
+	 * @package Conpago\Contract
+	 */
 	interface ITimeService
 	{
 		/**
-		 * @return DateTime
+		 * @return DateTime This function returns current system DateTime.
 		 */
 		function getCurrentTime();
 	}

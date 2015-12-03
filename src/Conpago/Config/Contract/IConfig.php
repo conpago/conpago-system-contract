@@ -8,19 +8,26 @@
 
 	namespace Conpago\Config\Contract;
 
+	/**
+	 * Interface that represents access to key/value configuration data.
+	 *
+	 * @package Conpago\Config\Contract
+	 */
 	interface IConfig
 	{
 		/**
-		 * @param $path
+		 * @param string $key Key to identify value
 		 *
-		 * @return mixed
+		 * @return mixed Value identified by key
 		 */
-		function getValue($path);
+		function getValue($key);
 
 		/**
-		 * @param $path
+		 * @param string $key Key to identify value
 		 *
-		 * @return bool
+		 * @return bool This function returns false if the
+		 * key isn't exists in configuration, or true
+		 * otherwise.
 		 */
-		function hasValue($path);
+		function hasValue($key);
 	}

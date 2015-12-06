@@ -17,7 +17,7 @@
 	</target>
 
 	<target name="update" description="update composer packages">
-		<exec command="composer update" />
+		<exec command="composer update" passthru="true" />
 	</target>
 
 	<target name="phpunit">

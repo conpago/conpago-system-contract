@@ -81,6 +81,16 @@ interface IFileSystem
     public function requireFile($filePath);
 
     /**
+     * Attempts to create the directory specified by pathname.
+     *
+     * @param string $pathname The directory path.
+     * @param bool $recursive Allows the creation of nested directories specified in the pathname.
+     *
+     * @return bool
+     */
+    public function createDirectory($pathname, $recursive);
+
+    /**
      * Reads entire file into a string.
      * Wrapper for PHP {@link http://php.net/manual/en/function.file-get-contents.php file_get_contents()} function.
      *

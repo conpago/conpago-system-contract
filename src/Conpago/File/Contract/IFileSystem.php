@@ -91,6 +91,15 @@ interface IFileSystem
     public function createDirectory($pathname, $recursive);
 
     /**
+     * Checks whether a file or directory exists.
+     *
+     * @param string $filename Path to the file or directory.
+     *
+     * @return bool
+     */
+    public function fileExists($filename);
+
+    /**
      * Reads entire file into a string.
      * Wrapper for PHP {@link http://php.net/manual/en/function.file-get-contents.php file_get_contents()} function.
      *

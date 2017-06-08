@@ -30,5 +30,5 @@ interface ITimeZone
      * timezone_identifier isn't valid, or true
      * otherwise.
      */
-    public function setDefaultTimeZone($timezoneIdentifier);
+    public function setDefaultTimeZone(string $timezoneIdentifier): bool;
 }

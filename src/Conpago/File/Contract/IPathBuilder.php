@@ -26,7 +26,7 @@ interface IPathBuilder
      *
      * @return string Returns a string of elements joined with DIRECTORY_SEPARATOR.
      */
-    public function createPath(array $elements);
+    public function createPath(array $elements): string;
 
     /**
      * Get file name from path.
@@ -35,5 +35,5 @@ interface IPathBuilder
      *
      * @return string Returns file name without path of directories.
      */
-    public function fileName($filePath);
+    public function fileName(string $filePath): string;
 }

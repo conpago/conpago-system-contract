@@ -21,14 +21,15 @@ interface IPath
 
     /**
      * Gets path to the resource.
+     *
      * @return string Path to resource.
      */
-    public function get();
+    public function get(): string;
 
     /**
      * Gets real path to the resource.
      *
      * @return string Real path to resource.
      */
-    public function getReal();
+    public function getReal(): string;
 }

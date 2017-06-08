@@ -26,7 +26,7 @@ interface IFileSystem
      *
      * @return mixed Depends on included file.
      */
-    public function includeFile($filePath);
+    public function includeFile(string $filePath);
 
     /**
      * Find pathnames matching a pattern.
@@ -37,7 +37,7 @@ interface IFileSystem
      * @return mixed Returns an array containing the matched files/directories, an empty array if no file
      * matched or FALSE on error.
      */
-    public function glob($pattern);
+    public function glob(string $pattern);
 
     /**
      * Returns canonicalized absolute pathname.
@@ -50,7 +50,7 @@ interface IFileSystem
      * Trailing delimiters, such as \ and /, are also removed.
      * Returns FALSE on failure, e.g. if the file does not exist.
      */
-    public function realPath($path);
+    public function realPath(string $path);
 
     /**
      * Find pathnames matching a pattern.
@@ -60,7 +60,7 @@ interface IFileSystem
      *
      * @return mixed Depends on included file.
      */
-    public function requireOnce($filePath);
+    public function requireOnce(string $filePath);
 
     /**
      * Include file and instantiate class from file. ClassName must be same as fileName and filePath with namespace.
@@ -69,7 +69,7 @@ interface IFileSystem
      *
      * @return mixed Returns instance of class from file.
      */
-    public function loadClass($filePath);
+    public function loadClass(string $filePath);
 
     /**
      * Wrapper for PHP {@link http://php.net/manual/en/function.require.php require} statement.
@@ -78,7 +78,7 @@ interface IFileSystem
      *
      * @return mixed Depends on included file.
      */
-    public function requireFile($filePath);
+    public function requireFile(string $filePath);
 
     /**
      * Attempts to create the directory specified by pathname.
@@ -88,7 +88,7 @@ interface IFileSystem
      *
      * @return bool
      */
-    public function createDirectory($pathname, $recursive);
+    public function createDirectory(string $pathname, bool $recursive);
 
     /**
      * Checks whether a file or directory exists.
@@ -97,7 +97,7 @@ interface IFileSystem
      *
      * @return bool
      */
-    public function fileExists($filename);
+    public function fileExists(string $filename): bool;
 
     /**
      * Reads entire file into a string.
@@ -107,7 +107,7 @@ interface IFileSystem
      *
      * @return mixed The function returns the read data or FALSE on failure.
      */
-    public function getFileContent($fileName);
+    public function getFileContent(string $fileName);
 
     /**
      * Write a string to a file.
@@ -118,5 +118,5 @@ interface IFileSystem
      *
      * @return int This function returns the number of bytes that were written to the file, or FALSE on failure.
      */
-    public function setFileContent($fileName, $content);
+    public function setFileContent(string $fileName, string $content): int;
 }

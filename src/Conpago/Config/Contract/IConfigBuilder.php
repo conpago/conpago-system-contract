@@ -24,5 +24,5 @@ interface IConfigBuilder
      *
      * @return array This function returns associative configuration array
      */
-    public function build();
+    public function build(): array;
 }

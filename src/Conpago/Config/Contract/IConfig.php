@@ -13,6 +13,8 @@
 
 namespace Conpago\Config\Contract;
 
+use Conpago\Conpago\Config\Contract\KeyNotFoundException;
+
 /**
  * Interface that represents access to key/value configuration data.
  */
@@ -25,8 +27,10 @@ interface IConfig
      * @param string $key Key to identify value.
      *
      * @return mixed Returns value identified by key.
+     *
+     * @throws KeyNotFoundException
      */
-    public function getValue($key);
+    public function getValue(string $key);
 
     /**
      * Check is key exists in configuration.
@@ -37,5 +41,5 @@ interface IConfig
      * key isn't exists in configuration, or true
      * otherwise.
      */
-    public function hasValue($key);
+    public function hasValue(string $key): bool;
 }

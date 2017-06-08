@@ -26,5 +26,5 @@ interface ITimeService
      *
      * @return DateTime This function returns current system DateTime.
      */
-    public function getCurrentTime();
+    public function getCurrentTime(): DateTime;
 }

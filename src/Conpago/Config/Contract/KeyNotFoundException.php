@@ -8,8 +8,6 @@
 
 namespace Conpago\Config\Contract;
 
-use Throwable;
-
 class KeyNotFoundException extends \Exception
 {
     const CONFIGURATION_KEY_NOT_FOUND = "Configuration key not found!";

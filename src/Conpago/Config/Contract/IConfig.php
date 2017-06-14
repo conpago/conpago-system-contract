@@ -13,8 +13,6 @@
 
 namespace Conpago\Config\Contract;
 
-use Conpago\Conpago\Config\Contract\KeyNotFoundException;
-
 /**
  * Interface that represents access to key/value configuration data.
  */

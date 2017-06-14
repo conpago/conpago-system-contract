@@ -6,7 +6,7 @@
  * Time: 22:46
  */
 
-namespace Conpago\Conpago\Config\Contract;
+namespace Conpago\Config\Contract;
 
 use Throwable;
 
